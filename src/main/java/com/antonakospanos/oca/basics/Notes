@@ -1,2 +1,8 @@
-List<int> invalidList = new ArrayList<int>(); 		// invalid!
-List<Integer> validList = new ArrayList<Integer>(); // valid
+- JRE executables
+
+1) java: java application executor which is associated with a console to display output/errors
+2) javaw: (java windowed) application executor not associated with console. So no display of output/errors. Can be used to silently push the output/errors to text files. Mostly used to launch GUI based application
+3) javaws: (java web start) to download and run the distributed web applications. again No console is associated.
+
+All are part of JRE and use same JVM
+
