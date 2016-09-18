@@ -11,16 +11,16 @@ long    Long
 float   Float
 double  Double
 
-Integer Literals:       Double Literals:	Char Literals:
-decimal	 	..			float	..F			char 									'..'
-octal 		0..			double	..D			hex value of the UNICODE code point 	'\uXXXX'
-hex   		0x..							backspace								'\b'
-binary 		0b..							tab										'\t'
-long   		...L							line feed								'\n'
-delimter 	.._..							carriage return							'\r'
-											double quote							'\"'
-											single quote							'\''
-											backslash								'\\'
+Integer Literals:		Double Literals:		Char Literals:
+decimal		..      	float	..F	    		char                               		'..'
+octal		0..	        double	..D    			hex value of the UNICODE code point		'\uXXXX'
+hex  		0x..        				        backspace                          		'\b'
+binary		0b..        				        tab                               		'\t'
+long		...L        				        line feed                         		'\n'
+delimter	.._..        				        carriage return                   		'\r'
+             	        				        double quote                   		  	'\"'
+            	        				        single quote                		 	'\''
+            	        				        backslash                      			'\\'
 
 - Variable Declaration and Initialization
   ----------------------------------------
