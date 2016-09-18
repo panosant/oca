@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.antonakospanos.oca.basics.Assert;
+import com.antonakospanos.oca.datatypes.AutoBoxing;
 import com.antonakospanos.oca.datatypes.ImmutableStringWrapper;
 import com.antonakospanos.oca.datatypes.MutableStringWrapper;
 
@@ -18,7 +19,7 @@ public class Main implements Serializable {
 	private static final char άλφα = 'α';
 
 	public static void main(String ... args) {
-		System.out.println("Hello World!");
+		System.out.println("Hello OCA!");
 		
 		basics(); 		 // Module 2  DONE
 		dataTypes();   // Module 3  DONE
@@ -33,40 +34,76 @@ public class Main implements Serializable {
 	}
 	
 	private static void basics() {
+		System.out.println("------------------- Starting Module 2: Basics -------------------");
 		Assert.testAssert(0);
+		
+		System.out.println("------------------- Finishing Module 2: Basics -------------------\n");
 	}
 	
 	private static void dataTypes() {
+		System.out.println("------------------- Starting Module 3: Data Types -------------------");
+		
 		ImmutableStringWrapper.testImmutableStringWrapper();
 		MutableStringWrapper.testMutableStringWrapper();
+		AutoBoxing.testAutoBoxing();
+		
+		System.out.println("------------------- Finishing Module 3: Date Types -------------------\n");
 	}
 	
 	private static void operators() {
+		System.out.println("------------------- Starting Module 4: Operators -------------------");
+
 		// TODO on 2016.09.19-23
+
+		System.out.println("------------------- Finishing Module 4: Operators -------------------\n");
 	}
 	
 	private static void arrays() {
+		System.out.println("------------------- Starting Module 5: Arrays -------------------");
+
 		// TODO on 2016.09.24-25
+		
+		System.out.println("------------------- Finishing Module 5: Arrays -------------------\n");
 	}
 	
 	private static void loops() {
+		System.out.println("------------------- Starting Module 6: Loops -------------------");
+
 		// TODO on 2016.10.26-30
+		
+		System.out.println("------------------- Finishing Module 6: Loops -------------------\n");
 	}
 	
 	private static void methods() {
+		System.out.println("------------------- Starting Module 7: Methods -------------------");
+
 		// TODO on 2016.10.1-2
+		
+		System.out.println("------------------- Finishing Module 7: Methods -------------------\n");
 	}
 	
 	private static void inheritance() {
+		System.out.println("------------------- Starting Module 8: Inheritance -------------------");
+
 		// TODO on 2016.10.3-7
+		
+		System.out.println("------------------- Finishing Module 8: Inheritance -------------------\n");
 	}
 	
 	private static void exceptions() {
+		System.out.println("------------------- Starting Module 9: Exceptions -------------------");
+
 		// TODO on 2016.10.8-9
+
+		System.out.println("------------------- Finishing Module 9: Exceptions -------------------\n");
 	}
 	
 	private static void apis() {
+		System.out.println("------------------- Starting Module 10: APIs -------------------");
+
 		// TODO on 2016.10.10-14
+		
+		System.out.println("------------------- Finishing Module 10: APIs -------------------\n");
 	}
 	
 	private static void revision() {
