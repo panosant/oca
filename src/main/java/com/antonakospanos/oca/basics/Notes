@@ -1,0 +1,2 @@
+List<int> invalidList = new ArrayList<int>(); 		// invalid!
+List<Integer> validList = new ArrayList<Integer>(); // valid
