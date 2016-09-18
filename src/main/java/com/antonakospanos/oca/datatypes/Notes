@@ -1,4 +1,19 @@
 - Wrapper classes for primitive data types
 
+8 primitive data types <-> 8 wrapper classes
+--------------------------------------------
+boolean Boolean
+char    Character
+byte    Byte
+short   Short
+int     Integer
+long    Long
+float   Float
+double  Double
+
 List<int> invalidList = new ArrayList<int>(); 		// invalid!
 List<Integer> validList = new ArrayList<Integer>(); // valid
+
+Wrapper Objects support many methods associated with them: 
+a) static methods
+b) instance methods
