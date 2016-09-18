@@ -1,8 +1,6 @@
 package com.antonakospanos.oca;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 
 import com.antonakospanos.oca.basics.Assert;
 import com.antonakospanos.oca.datatypes.AutoBoxing;
@@ -15,8 +13,6 @@ import com.antonakospanos.oca.datatypes.MutableStringWrapper;
 public class Main implements Serializable {
 	
 	private static final long serialVersionUID = 8426735796963772818L;
-	private static final char alpha = 'a';
-	private static final char άλφα = 'α';
 
 	public static void main(String ... args) {
 		System.out.println("Hello OCA!");
