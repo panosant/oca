@@ -1,0 +1,11 @@
+while (<boolean-expression>) {
+	<statement>;
+	<statement>;
+}
+
+int counter = 0;
+int x = 10;
+while (x>0) {
+	System.out.println("Iteration" +  ++counter);
+	x--;
+}

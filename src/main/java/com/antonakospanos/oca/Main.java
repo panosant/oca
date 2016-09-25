@@ -22,9 +22,9 @@ public class Main implements Serializable {
 		dataTypes();   // Module 3  DONE
 		
 		operators(); 	 // Module 4  DONE
-		arrays(); 		 // Module 5  In Progress
+		arrays(); 		 // Module 5  DONE
 		
-		loops(); 			 // Module 6  TODO
+		loops(); 			 // Module 6  In Progress
 		methods(); 		 // Module 7  TODO
 		
 		inheritance(); // Module 8  TODO
