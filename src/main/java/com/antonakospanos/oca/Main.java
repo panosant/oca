@@ -19,12 +19,16 @@ public class Main implements Serializable {
 		
 		basics(); 		 // Module 2  DONE
 		dataTypes();   // Module 3  DONE
-		operators(); 	 // Module 4  TODO
-		arrays(); 		 // Module 5  TODO
+		
+		operators(); 	 // Module 4  DONE
+		arrays(); 		 // Module 5  In Progress
+		
 		loops(); 			 // Module 6  TODO
 		methods(); 		 // Module 7  TODO
+		
 		inheritance(); // Module 8  TODO
 		exceptions();  // Module 9  TODO
+		
 		apis(); 			 // Module 10 TODO
 		revision();
 	}
@@ -49,7 +53,7 @@ public class Main implements Serializable {
 	private static void operators() {
 		System.out.println("------------------- Starting Module 4: Operators -------------------");
 
-		// TODO on 2016.09.19-23
+		System.out.println("Reviewed all JAVA operators");
 
 		System.out.println("------------------- Finishing Module 4: Operators -------------------\n");
 	}
@@ -65,7 +69,7 @@ public class Main implements Serializable {
 	private static void loops() {
 		System.out.println("------------------- Starting Module 6: Loops -------------------");
 
-		// TODO on 2016.10.26-30
+		// TODO on 2016.10.1-2
 		
 		System.out.println("------------------- Finishing Module 6: Loops -------------------\n");
 	}
@@ -81,7 +85,7 @@ public class Main implements Serializable {
 	private static void inheritance() {
 		System.out.println("------------------- Starting Module 8: Inheritance -------------------");
 
-		// TODO on 2016.10.3-7
+		// TODO on 2016.10.8-9
 		
 		System.out.println("------------------- Finishing Module 8: Inheritance -------------------\n");
 	}
@@ -97,7 +101,7 @@ public class Main implements Serializable {
 	private static void apis() {
 		System.out.println("------------------- Starting Module 10: APIs -------------------");
 
-		// TODO on 2016.10.10-14
+		// TODO on 2016.10.15-16
 		
 		System.out.println("------------------- Finishing Module 10: APIs -------------------\n");
 	}
