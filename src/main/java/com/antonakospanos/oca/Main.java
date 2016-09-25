@@ -2,6 +2,7 @@ package com.antonakospanos.oca;
 
 import java.io.Serializable;
 
+import com.antonakospanos.oca.arrays.examples.ArrayInitializer;
 import com.antonakospanos.oca.basics.Assert;
 import com.antonakospanos.oca.datatypes.examples.AutoBoxing;
 import com.antonakospanos.oca.datatypes.examples.ImmutableStringWrapper;
@@ -61,8 +62,12 @@ public class Main implements Serializable {
 	private static void arrays() {
 		System.out.println("------------------- Starting Module 5: Arrays -------------------");
 
-		// TODO on 2016.09.24-25
-		
+		ArrayInitializer.initializeWithSystemCopy(new int[]{1,2,3}, new int[10]);
+
+		ArrayInitializer.initializeWithTraditionalForLoop(new int[2][3]);
+		ArrayInitializer.manipulateWithForEachLoop(new int[2][3]);
+		ArrayInitializer.manipulateWithForEachLoop(new Integer[2][3]);
+
 		System.out.println("------------------- Finishing Module 5: Arrays -------------------\n");
 	}
 	
