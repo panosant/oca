@@ -1,4 +1,4 @@
-package com.antonakospanos.oca.datatypes;
+package com.antonakospanos.oca.datatypes.examples;
 
 public class ImmutableStringWrapper {
 	

@@ -3,9 +3,9 @@ package com.antonakospanos.oca;
 import java.io.Serializable;
 
 import com.antonakospanos.oca.basics.Assert;
-import com.antonakospanos.oca.datatypes.AutoBoxing;
-import com.antonakospanos.oca.datatypes.ImmutableStringWrapper;
-import com.antonakospanos.oca.datatypes.MutableStringWrapper;
+import com.antonakospanos.oca.datatypes.examples.AutoBoxing;
+import com.antonakospanos.oca.datatypes.examples.ImmutableStringWrapper;
+import com.antonakospanos.oca.datatypes.examples.MutableStringWrapper;
 
 /**
  * App created in the context of OCA training
