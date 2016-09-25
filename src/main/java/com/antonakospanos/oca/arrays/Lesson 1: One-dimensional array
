@@ -1,0 +1,14 @@
+a) Declaration
+
+<type name> <variable name>;
+   int[]      arrayOfInt;
+
+// or (based on C syntax):
+//  int      arrayOfInt[];
+
+b) Instantiation
+
+
+c) Initialization
+
+<type name> <variable name> = <initialization>;
