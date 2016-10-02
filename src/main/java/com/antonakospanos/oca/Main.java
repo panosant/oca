@@ -24,8 +24,8 @@ public class Main implements Serializable {
 		operators(); 	 // Module 4  DONE
 		arrays(); 		 // Module 5  DONE
 		
-		loops(); 			 // Module 6  In Progress
-		methods(); 		 // Module 7  TODO
+		loops(); 			 // Module 6  DONE
+		methods(); 		 // Module 7  In Progress
 		
 		inheritance(); // Module 8  TODO
 		exceptions();  // Module 9  TODO
@@ -74,8 +74,6 @@ public class Main implements Serializable {
 	private static void loops() {
 		System.out.println("------------------- Starting Module 6: Loops -------------------");
 
-		// TODO on 2016.10.1-2
-		
 		System.out.println("------------------- Finishing Module 6: Loops -------------------\n");
 	}
 	
