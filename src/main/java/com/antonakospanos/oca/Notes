@@ -24,3 +24,9 @@ java.util.stream
 immutable Objects (that cannot be changed after construction)
 volatile
 final
+
+---------
+Exercise!
+--------------------------------------------------------------------
+Start coding on WHITEBOARD!!! (without compiler's syntax evaluation)
+--------------------------------------------------------------------
