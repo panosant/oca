@@ -62,7 +62,7 @@ public class Main implements Serializable {
 	private static void arrays() {
 		System.out.println("------------------- Starting Module 5: Arrays -------------------");
 
-		ArrayInitializer.initializeWithSystemCopy(new int[]{1,2,3}, new int[10]);
+		ArrayInitializer.initializeWithSystemCopy(new int[]{1,2,3}, new int[6]);
 
 		ArrayInitializer.initializeWithTraditionalForLoop(new int[2][3]);
 		ArrayInitializer.manipulateWithForEachLoop(new int[2][3]);

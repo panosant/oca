@@ -4,6 +4,9 @@ public class ArrayInitializer {
 	
 	public static void initializeWithSystemCopy(int[] from, int[] to) {
 		System.arraycopy(from,0, to, 0, from.length);
+		for (int integer : to) {
+			System.out.println(integer);
+		}
 		System.out.println("Initialized array using System.arraycopy method");
 	}
 	
@@ -17,6 +20,7 @@ public class ArrayInitializer {
 				System.out.println(integer);
 			}
 		}
+		System.out.println("Initialized array using traditional for loop");
 	}
 	
 	public static void manipulateWithForEachLoop(int[][] arrayOfArraysOfInts) {
@@ -29,6 +33,7 @@ public class ArrayInitializer {
 				System.out.println(integer);
 			}
 		}
+		System.out.println("Iterated array using enhanced for loop");
 	}
 	
 	public static void manipulateWithForEachLoop(Integer[][] arrayOfArraysOfInts) {
@@ -41,5 +46,6 @@ public class ArrayInitializer {
 				System.out.println(integer);
 			}
 		}
+		System.out.println("Iterated array using enhanced for loop");
 	}
 }
