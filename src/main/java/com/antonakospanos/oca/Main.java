@@ -2,11 +2,13 @@ package com.antonakospanos.oca;
 
 import java.io.Serializable;
 
+import com.antonakospanos.Executor;
 import com.antonakospanos.oca.arrays.examples.ArrayInitializer;
 import com.antonakospanos.oca.basics.Assert;
 import com.antonakospanos.oca.datatypes.examples.AutoBoxing;
 import com.antonakospanos.oca.datatypes.examples.ImmutableStringWrapper;
 import com.antonakospanos.oca.datatypes.examples.MutableStringWrapper;
+import com.antonakospanos.ocp.Introduction;
 
 /**
  * App created in the context of OCA training
@@ -32,6 +34,8 @@ public class Main implements Serializable {
 		
 		apis(); 			 // Module 10 TODO
 		revision();
+		
+		introductionToOCP();
 	}
 	
 	private static void basics() {
@@ -111,5 +115,9 @@ public class Main implements Serializable {
 	
 	private static void revision() {
 		// TODO on 2016.10.15-16
+	}
+	
+	private static void introductionToOCP() {
+		Executor.runStaticMethods(Introduction.class.getName());
 	}
 }

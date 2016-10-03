@@ -8,6 +8,10 @@ public class MutableStringWrapper {
 		this.mutableString = s;
 	}
 	
+	public MutableStringWrapper() {
+		this.mutableString = "";
+	}
+	
 	public String getString() {
 		return mutableString;
 	}
