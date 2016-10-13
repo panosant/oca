@@ -27,9 +27,9 @@ public class Main implements Serializable {
 		arrays(); 		 // Module 5  DONE
 		
 		loops(); 			 // Module 6  DONE
-		methods(); 		 // Module 7  In Progress
+		methods(); 		 // Module 7  DONE
 		
-		inheritance(); // Module 8  TODO
+		inheritance(); // Module 8  In Progress
 		exceptions();  // Module 9  TODO
 		
 		apis(); 			 // Module 10 TODO
