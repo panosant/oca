@@ -1,11 +1,13 @@
-- Generalization
-  --------------
-1) multi interface inheritance // no impl gets reused apart from static/default
-2) single implementation inheritance (concrete inheritance)
-
+- Generalization - Specialization
+- -----------------------------------------------------------
+- (Multi) interface inheritance
+- (Single) implementation inheritance (concrete inheritance)
+- -----------------------------------------------------------
 // Java restricts implementation inheritance to single inheritance
 // so that it avoids too much complexity and the "Diamond Problem"!
 
+// No impl gets reused apart from static/default in interface inheritance
+ 
 class Animal {
 	protected Food favorite(){...};
 }
@@ -13,7 +15,8 @@ class Pet extends Animal
 class Feline extends Animal
 class FelisCattus extends Pet,Animal // which favorite() method will inherit??
 
-Promise/Contract: 
+Promise/Contract:
+-----------------
 interface {
 	eat(food);// "Can eat food"
 }
@@ -26,8 +29,8 @@ class {
 operateOn(base)
 operateOn(subclass)
 
-parent/base class
-
+parent/base class:
+------------------
 public class Person {
 	private String name;
 	protected String hairColor;
@@ -58,17 +61,6 @@ public class Friend extends Person {
 "Overloading method" // same method name, diff arg list
 "Overriding method"  // same method name, same arg list
 
-
-- Polymorphism
-  ------------
-"The ability to look to an object in ..multiple ways!"
-"Object with multiple shapes or forms..!"
-
-E.g:
-1) Overloading
-2) Generics
-3) Operators
-  
 - Encapsulation
   -------------
 1) "Data inaccessible from outside" // private member vars
@@ -77,24 +69,25 @@ E.g:
 
 Pet: Cat, Dog, or whatever else Pet
 
-- Terminology
-  -----------
-B extends A (implementation inheritance)
-
+- Terminology:
+  ------------
+- B extends A (implementation inheritance)
+  ----------------------------------------
 B "is an" A
 B extends A
-B is a derived class
-B is derived from A
+B is a "derived" class
+B is "derived" from A
 B is a child of A
 B is a subclass of A
 
 A is the parent of B
-A is the baseclass of B
-A is the superclass of B
+A is the "parent class" of B
+A is the "base class" of B
+A is the "super class" of B
 
-B is an implementation of A interface (interface inheritance)
-
+- B is an implementation of A interface (interface inheritance)
+  -------------------------------------------------------------
 B implements A
-B fulfils the contract of A
-B fulfils the promise of A
+B fulfills the contract of A
+B fulfills the promise of A
 B "is an" A
