@@ -15,18 +15,18 @@ Problem Categories:
 1) Checked Exceptions 	// Problem caused by external environment
 ---------------------
 Caused by bad user input, missing args, etc
-A robust implementation whould try to catch them and fix them!!!
+A robust implementation should try to catch them and fix them!!!
 
 2) Unchecked Exceptions
 -----------------------
 No effort by the javac so that we fix it!
 
-	2i) Runtime Exceptions	// Bug caused by bad coding
+	2i) Runtime Exceptions	// Bug caused by bad coding, debug it!
 	----------------------
 	The problem should NOT be caught, the execution should NOT recover
 	The Developer will try to debug to find the cause and fix it
 	
-	2ii) Errors		// Errors external to the program
+	2ii) Errors		// Errors external to the program!
 	-----------
 	catastrophic, unrecoverable
 	E.g: stackoverflow
