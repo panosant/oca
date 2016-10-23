@@ -8,6 +8,8 @@ import com.antonakospanos.oca.basics.Assert;
 import com.antonakospanos.oca.datatypes.examples.AutoBoxing;
 import com.antonakospanos.oca.datatypes.examples.ImmutableStringWrapper;
 import com.antonakospanos.oca.datatypes.examples.MutableStringWrapper;
+import com.antonakospanos.oca.inheritance.examples.BasePromise;
+import com.antonakospanos.oca.inheritance.examples.impl.Specialization;
 import com.antonakospanos.ocp.Introduction;
 
 /**
@@ -29,8 +31,8 @@ public class Main implements Serializable {
 		loops(); 			 // Module 6  DONE
 		methods(); 		 // Module 7  DONE
 		
-		inheritance(); // Module 8  In Progress
-		exceptions();  // Module 9  TODO
+		inheritance(); // Module 8  DONE
+		exceptions();  // Module 9  In Progress
 		
 		apis(); 			 // Module 10 TODO
 		revision();
@@ -84,15 +86,16 @@ public class Main implements Serializable {
 	private static void methods() {
 		System.out.println("------------------- Starting Module 7: Methods -------------------");
 
-		// TODO on 2016.10.1-2
-		
 		System.out.println("------------------- Finishing Module 7: Methods -------------------\n");
 	}
 	
 	private static void inheritance() {
 		System.out.println("------------------- Starting Module 8: Inheritance -------------------");
 
-		// TODO on 2016.10.8-9
+		Specialization s = new Specialization();
+		if (s instanceof BasePromise) {
+			System.out.println("Specialization is instance of the interface of the parent class!!");
+		}
 		
 		System.out.println("------------------- Finishing Module 8: Inheritance -------------------\n");
 	}
