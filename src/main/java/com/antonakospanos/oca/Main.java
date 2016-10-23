@@ -1,11 +1,14 @@
 package com.antonakospanos.oca;
 
 import java.io.Serializable;
+import java.time.LocalDateTime;
+import java.time.Period;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.antonakospanos.Executor;
+import com.antonakospanos.oca.apis.examples.CalendarManipulation;
 import com.antonakospanos.oca.apis.examples.StringBuilderManipulation;
 import com.antonakospanos.oca.apis.examples.StringManipulation;
 import com.antonakospanos.oca.arrays.examples.ArrayInitializer;
@@ -185,6 +188,19 @@ public class Main implements Serializable {
 	}
 	
 	private static void calendarManipulation() {
-		//TODO
+		
+		LocalDateTime ldt1 = LocalDateTime.now();
+		LocalDateTime ldt2 = CalendarManipulation.adjustDay(ldt1);
+		
+		long diffDays = CalendarManipulation.diffDays(ldt1, ldt2);
+		long diffMillis = CalendarManipulation.diffMillis(ldt1, ldt2);
+		
+		// Change the ldt objects using java.time.Period
+		Period day = Period.ofDays(1);
+		Period month = Period.ofMonths(1);
+		month = month.normalized(); // immutable class
+		
+		LocalDateTime ldt3 = CalendarManipulation.addPeriod(ldt1, day);
+		LocalDateTime ldt4 = CalendarManipulation.addPeriod(ldt3, month);
 	}
 }
