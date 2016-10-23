@@ -6,6 +6,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.antonakospanos.Executor;
+import com.antonakospanos.oca.apis.examples.StringBuilderManipulation;
+import com.antonakospanos.oca.apis.examples.StringManipulation;
 import com.antonakospanos.oca.arrays.examples.ArrayInitializer;
 import com.antonakospanos.oca.basics.Assert;
 import com.antonakospanos.oca.datatypes.examples.AutoBoxing;
@@ -38,9 +40,9 @@ public class Main implements Serializable {
 		methods(); 		 // Module 7  DONE
 		
 		inheritance(); // Module 8  DONE
-		exceptions();  // Module 9  In Progress
+		exceptions();  // Module 9  DONE
 		
-		apis(); 			 // Module 10 TODO
+		apis(); 			 // Module 10 In Progress
 		revision();
 		
 		introductionToOCP();
@@ -120,17 +122,69 @@ public class Main implements Serializable {
 	
 	private static void apis() {
 		System.out.println("------------------- Starting Module 10: APIs -------------------");
-
-		// TODO on 2016.10.15-16
+		
+		stringBuilderManipulation();
+		stringManipulation();
+		calendarManipulation();
 		
 		System.out.println("------------------- Finishing Module 10: APIs -------------------\n");
 	}
 	
 	private static void revision() {
-		// TODO on 2016.10.15-16
+		// TODO
 	}
 	
 	private static void introductionToOCP() {
 		Executor.runStaticMethods(Introduction.class.getName());
+	}
+	
+	
+	/*
+	 *  private methods for Module10: APIs
+	 */
+	private static void stringBuilderManipulation() {
+		
+		StringBuilder sb = StringBuilderManipulation.getHelloWorld();
+		StringBuilderManipulation.deleteWord(sb, 5, sb.length());
+		StringBuilderManipulation.insertStringRepresentation(sb, 5, new Object[] {"1", 2, 1.2});
+		StringBuilderManipulation.replaceStringBuffer(sb, 5, sb.length(), " behaviour");
+		StringBuilderManipulation.reverseStringBuffer(sb);
+		StringBuilderManipulation.changeChar(sb, 0, '!');
+		StringBuilderManipulation.truncateStringBuffer(sb, 9);
+		
+		String subString = StringBuilderManipulation.getSubString(sb, 1);
+		char c = StringBuilderManipulation.getChar(sb, 0);
+		StringBuilderManipulation.copyChars(sb, 0, 1, new char[] {c,}, 0);
+		int firstExclamationIndex = StringBuilderManipulation.firstIndexOf(sb, "!");
+		int lastExclamationIndex = StringBuilderManipulation.lastIndexOf(sb, "!");
+		int capacity = StringBuilderManipulation.getCapacity(sb);
+		StringBuilderManipulation.ensureCapacity(sb, capacity*2);
+		StringBuilderManipulation.trimCapacity(sb);
+	}
+	
+	private static void stringManipulation() {
+		String s1 = "Hello, world!";
+		String s2 = StringManipulation.getNewUpperCaseString(s1);
+		// Compare the references to str1 and str2 objects
+		if (s1 == s2) {
+			LOGGER.info("str1 and str2 share the same memory address (reference)");
+		} else {
+			LOGGER.info("str1 and str2 do NOT share the same memory address (reference)");
+		}
+		// Compare the data of str1 and str2 objects
+		if (s1.equals(s2)) {
+			LOGGER.info("str1 and str2 contain the same data");
+		} else {
+			LOGGER.info("str1 and str2 do NOT contain the same data");
+		}
+		String s3 = StringManipulation.getString(new Object());
+		String s4 = StringManipulation.getStringRepresentation(new Object());
+		String s5 = StringManipulation.getConcatenatedString(s3, s4);
+		String s6 = StringManipulation.getTrimmedString(s5);
+		String s7 = StringManipulation.getReplacedString(s6, "old", "new");
+	}
+	
+	private static void calendarManipulation() {
+		//TODO
 	}
 }
