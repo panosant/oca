@@ -12,6 +12,7 @@ import com.antonakospanos.oca.datatypes.examples.AutoBoxing;
 import com.antonakospanos.oca.datatypes.examples.ImmutableStringWrapper;
 import com.antonakospanos.oca.datatypes.examples.MutableStringWrapper;
 import com.antonakospanos.oca.exceptions.examples.CheckedExceptionHandling;
+import com.antonakospanos.oca.exceptions.examples.MyCheckedException;
 import com.antonakospanos.oca.inheritance.examples.BasePromise;
 import com.antonakospanos.oca.inheritance.examples.impl.Specialization;
 import com.antonakospanos.ocp.Introduction;
@@ -108,7 +109,11 @@ public class Main implements Serializable {
 	private static void exceptions() {
 		System.out.println("------------------- Starting Module 9: Exceptions -------------------");
 
-		CheckedExceptionHandling.handleResources();
+		try {
+			CheckedExceptionHandling.handleResources();
+		} catch (MyCheckedException ce) {
+			LOGGER.warn("CheckedExceptionHandling.handleResources failed cause: ", ce);
+		}
 
 		System.out.println("------------------- Finishing Module 9: Exceptions -------------------\n");
 	}
