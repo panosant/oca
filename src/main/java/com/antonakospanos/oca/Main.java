@@ -2,12 +2,16 @@ package com.antonakospanos.oca;
 
 import java.io.Serializable;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.antonakospanos.Executor;
 import com.antonakospanos.oca.arrays.examples.ArrayInitializer;
 import com.antonakospanos.oca.basics.Assert;
 import com.antonakospanos.oca.datatypes.examples.AutoBoxing;
 import com.antonakospanos.oca.datatypes.examples.ImmutableStringWrapper;
 import com.antonakospanos.oca.datatypes.examples.MutableStringWrapper;
+import com.antonakospanos.oca.exceptions.examples.CheckedExceptionHandling;
 import com.antonakospanos.oca.inheritance.examples.BasePromise;
 import com.antonakospanos.oca.inheritance.examples.impl.Specialization;
 import com.antonakospanos.ocp.Introduction;
@@ -18,6 +22,7 @@ import com.antonakospanos.ocp.Introduction;
 public class Main implements Serializable {
 	
 	private static final long serialVersionUID = 8426735796963772818L;
+	public static final Logger LOGGER =  LoggerFactory.getLogger(Main.class);
 
 	public static void main(String ... args) {
 		System.out.println("Hello OCA!");
@@ -103,7 +108,7 @@ public class Main implements Serializable {
 	private static void exceptions() {
 		System.out.println("------------------- Starting Module 9: Exceptions -------------------");
 
-		// TODO on 2016.10.8-9
+		CheckedExceptionHandling.handleResources();
 
 		System.out.println("------------------- Finishing Module 9: Exceptions -------------------\n");
 	}
