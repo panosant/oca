@@ -18,12 +18,18 @@ l1.add("Hello 1");
 String s1 = (String) (l.get(0));
 
 List<String> l3 = new ArrayList<String>();
-l3.add("Hello 3")
-String s3 = l3.getString(0);
+l3.add("Hello 3");
+l3.get(0);
+l3.set(0, "New hello 3");
 l3.remove(0);
+l3.remove("New hello 3");
+l3.isEmpty();
 for (String s : l3) {
 	system.out.println(s);
 }
+l3.size();
+l3.clear();
+l3.contains("New hello 3");
 
 Java Programming Language is:
 -------------------------------
