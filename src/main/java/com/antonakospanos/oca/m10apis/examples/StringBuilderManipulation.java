@@ -1,4 +1,4 @@
-package com.antonakospanos.oca.apis.examples;
+package com.antonakospanos.oca.m10apis.examples;
 
 public class StringBuilderManipulation {
 	

@@ -1,4 +1,4 @@
-package com.antonakospanos.oca.exceptions.examples;
+package com.antonakospanos.oca.m09exceptions.examples;
 
 public class MyCheckedException extends Exception {
 

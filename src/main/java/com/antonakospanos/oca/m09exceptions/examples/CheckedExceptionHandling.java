@@ -1,4 +1,4 @@
-package com.antonakospanos.oca.exceptions.examples;
+package com.antonakospanos.oca.m09exceptions.examples;
 
 import java.io.IOException;
 import java.io.InputStream;

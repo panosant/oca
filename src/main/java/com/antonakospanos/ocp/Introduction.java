@@ -1,8 +1,8 @@
 package com.antonakospanos.ocp;
 
-import com.antonakospanos.oca.datatypes.examples.AutoBoxing;
-import com.antonakospanos.oca.datatypes.examples.ImmutableStringWrapper;
-import com.antonakospanos.oca.datatypes.examples.MutableStringWrapper;
+import com.antonakospanos.oca.m03datatypes.examples.AutoBoxing;
+import com.antonakospanos.oca.m03datatypes.examples.ImmutableStringWrapper;
+import com.antonakospanos.oca.m03datatypes.examples.MutableStringWrapper;
 import com.antonakospanos.ocp.reflection.Reflection;
 import com.antonakospanos.ocp.stream.StreamManipulation;
 
@@ -16,9 +16,9 @@ public class Introduction {
 	public static void reflection() {
 		System.out.println("------------------- Starting reflection() method.. -------------------");
 
-		// com.antonakospanos.oca.datatypes.examples.MutableStringWrapper
-		// com.antonakospanos.oca.datatypes.examples.ImmutableStringWrapper fails cause there is NOT a no-args constructor!
-		// com.antonakospanos.oca.datatypes.examples.AutoBoxing
+		// com.antonakospanos.oca.m03datatypes.examples.MutableStringWrapper
+		// com.antonakospanos.oca.m03datatypes.examples.ImmutableStringWrapper fails cause there is NOT a no-args constructor!
+		// com.antonakospanos.oca.m03datatypes.examples.AutoBoxing
 		Reflection.invokeMethodUsingReflection("toString", 
 				MutableStringWrapper.class.getName(), 
 				ImmutableStringWrapper.class.getName(), 

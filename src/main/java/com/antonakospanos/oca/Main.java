@@ -8,18 +8,18 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.antonakospanos.Executor;
-import com.antonakospanos.oca.apis.examples.CalendarManipulation;
-import com.antonakospanos.oca.apis.examples.StringBuilderManipulation;
-import com.antonakospanos.oca.apis.examples.StringManipulation;
-import com.antonakospanos.oca.arrays.examples.ArrayInitializer;
-import com.antonakospanos.oca.basics.Assert;
-import com.antonakospanos.oca.datatypes.examples.AutoBoxing;
-import com.antonakospanos.oca.datatypes.examples.ImmutableStringWrapper;
-import com.antonakospanos.oca.datatypes.examples.MutableStringWrapper;
-import com.antonakospanos.oca.exceptions.examples.CheckedExceptionHandling;
-import com.antonakospanos.oca.exceptions.examples.MyCheckedException;
-import com.antonakospanos.oca.inheritance.examples.BasePromise;
-import com.antonakospanos.oca.inheritance.examples.impl.Specialization;
+import com.antonakospanos.oca.m10apis.examples.CalendarManipulation;
+import com.antonakospanos.oca.m10apis.examples.StringBuilderManipulation;
+import com.antonakospanos.oca.m10apis.examples.StringManipulation;
+import com.antonakospanos.oca.m05arrays.examples.ArrayInitializer;
+import com.antonakospanos.oca.m02basics.Assert;
+import com.antonakospanos.oca.m03datatypes.examples.AutoBoxing;
+import com.antonakospanos.oca.m03datatypes.examples.ImmutableStringWrapper;
+import com.antonakospanos.oca.m03datatypes.examples.MutableStringWrapper;
+import com.antonakospanos.oca.m09exceptions.examples.CheckedExceptionHandling;
+import com.antonakospanos.oca.m09exceptions.examples.MyCheckedException;
+import com.antonakospanos.oca.m08inheritance.examples.BasePromise;
+import com.antonakospanos.oca.m08inheritance.examples.impl.Specialization;
 import com.antonakospanos.ocp.Introduction;
 
 /**

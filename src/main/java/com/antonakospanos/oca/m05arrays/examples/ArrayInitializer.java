@@ -1,4 +1,4 @@
-package com.antonakospanos.oca.arrays.examples;
+package com.antonakospanos.oca.m05arrays.examples;
 
 public class ArrayInitializer {
 	

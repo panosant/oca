@@ -1,4 +1,4 @@
-package com.antonakospanos.oca.datatypes.examples;
+package com.antonakospanos.oca.m03datatypes.examples;
 
 public class Constants {
 	

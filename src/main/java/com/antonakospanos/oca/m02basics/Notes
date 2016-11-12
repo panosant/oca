@@ -6,9 +6,9 @@
 
 All are part of JRE and use same JVM
 
-$ java -cp /home/antonakospanos/jars* com.antonakospanos.oca.basics.Printer
+$ java -cp /home/antonakospanos/jars* com.antonakospanos.oca.m02basics.Printer
 $ export CLASSPATH=/home/antonakospanos/jars:$CLASSPATH
-$ java com.antonakospanos.oca.basics.Printer
+$ java com.antonakospanos.oca.m02basics.Printer
 $ unset CLASSPATH
 $ echo $CLASSPATH
   (empty line)
@@ -26,7 +26,7 @@ if (c != null) {
 	pwd.println();
 } 
 
-$ javap -c com.antonakospanos.oca.basics.Printer.class // Java Class Disassembler: ByteCode Viewer!
+$ javap -c com.antonakospanos.oca.m02basics.Printer.class // Java Class Disassembler: ByteCode Viewer!
 
 
 - Java Properties:
@@ -49,7 +49,7 @@ Encapsulation on Mutable Objects:
 - Assert
   ------
 assertions declared with "assert" statement in front will be evaluated upon:
-$ java -ea com.antonakospanos.oca.basics.Assert
-$ java -enableassertions com.antonakospanos.oca.basics.Assert
+$ java -ea com.antonakospanos.oca.m02basics.Assert
+$ java -enableassertions com.antonakospanos.oca.m02basics.Assert
 
 In case the assertion fails the JVM throws an AssrtionError() Exception!
