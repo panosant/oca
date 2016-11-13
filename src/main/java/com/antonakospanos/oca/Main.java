@@ -3,23 +3,25 @@ package com.antonakospanos.oca;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.time.Period;
+import java.util.Arrays;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.antonakospanos.Executor;
-import com.antonakospanos.oca.m10apis.examples.CalendarManipulation;
-import com.antonakospanos.oca.m10apis.examples.StringBuilderManipulation;
-import com.antonakospanos.oca.m10apis.examples.StringManipulation;
-import com.antonakospanos.oca.m05arrays.examples.ArrayInitializer;
+import com.antonakospanos.oca.exam.Revision;
 import com.antonakospanos.oca.m02basics.Assert;
 import com.antonakospanos.oca.m03datatypes.examples.AutoBoxing;
 import com.antonakospanos.oca.m03datatypes.examples.ImmutableStringWrapper;
 import com.antonakospanos.oca.m03datatypes.examples.MutableStringWrapper;
-import com.antonakospanos.oca.m09exceptions.examples.CheckedExceptionHandling;
-import com.antonakospanos.oca.m09exceptions.examples.MyCheckedException;
+import com.antonakospanos.oca.m05arrays.examples.ArrayInitializer;
 import com.antonakospanos.oca.m08inheritance.examples.BasePromise;
 import com.antonakospanos.oca.m08inheritance.examples.impl.Specialization;
+import com.antonakospanos.oca.m09exceptions.examples.CheckedExceptionHandling;
+import com.antonakospanos.oca.m09exceptions.examples.MyCheckedException;
+import com.antonakospanos.oca.m10apis.examples.CalendarManipulation;
+import com.antonakospanos.oca.m10apis.examples.StringBuilderManipulation;
+import com.antonakospanos.oca.m10apis.examples.StringManipulation;
 import com.antonakospanos.ocp.Introduction;
 
 /**
@@ -44,9 +46,9 @@ public class Main implements Serializable {
 		
 		inheritance(); // Module 8  DONE
 		exceptions();  // Module 9  DONE
-		
 		apis(); 			 // Module 10 DONE
-		revision();
+		
+		exam();				 // In Progress
 		
 		introductionToOCP();
 	}
@@ -133,13 +135,30 @@ public class Main implements Serializable {
 		System.out.println("------------------- Finishing Module 10: APIs -------------------\n");
 	}
 	
-	private static void revision() {
-		//
+	
+	
+	/**
+	 *  Revision and practice for the OCAJP8
+	 */
+	private static void exam () {
+		System.out.println("------------------- Starting Revision & Exam Practice -------------------");
+		
+		Revision.main();
+
+		System.out.println("------------------- Finishing Revision & Exam Practice -------------------\n");
 	}
 	
+	/**
+	 *  Introduction to OCPJP8
+	 */
 	private static void introductionToOCP() {
-		Executor.runStaticMethods(Introduction.class.getName());
+		System.out.println("------------------- Starting Introduction to OCPJP8 -------------------");
+
+		Executor.runStaticMethods(Introduction.class.getName(), 0, Arrays.asList("notifyAll", "wait", "notify"));
+		
+		System.out.println("------------------- Finishing Introduction to OCPJP8 -------------------\n");
 	}
+	
 	
 	
 	/*
