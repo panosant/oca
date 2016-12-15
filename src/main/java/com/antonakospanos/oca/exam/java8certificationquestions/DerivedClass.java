@@ -1,13 +1,23 @@
 package com.antonakospanos.oca.exam.java8certificationquestions;
 
 public class DerivedClass extends BaseClass {
+	
+	private int privateInteger;
+	protected int protectedInteger; // DOES NOT override the super.protectedInteger as in method overriding!
 
 	public DerivedClass(int x) {
 		super(x);
 		
-		integer = 0; // Visible by inheritance!
+		protectedInteger = 0; // Visible directly!
+		super.protectedInteger = 0; // Visible by inheritance!
+		
 		BaseClass bc = new BaseClass(0);
-		bc.integer = 1; // Visible cause DerivedClass and BaseClass are in the same package!
+		// bc.protectedInteger = 1; // NOT Visible cause we are NOT in BaseClass!!!
+		bc.protectedInteger = 2; // Visible cause DerivedClass and BaseClass are in the same package!
+		
+		DerivedClass dc = new DerivedClass(0);
+		dc.privateInteger = 1;	 // Visible cause we are in BaseClass!!!
+		dc.protectedInteger = 2; // Visible cause cause we are in com.antonakospanos.oca.exam.java8certificationquestions package!
 	}
 
 	@Override

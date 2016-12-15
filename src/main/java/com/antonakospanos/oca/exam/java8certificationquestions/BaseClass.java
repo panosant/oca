@@ -1,8 +1,9 @@
 package com.antonakospanos.oca.exam.java8certificationquestions;
 
 public class BaseClass {
-	
-	protected int integer;
+
+	private int privateInteger;
+	protected int protectedInteger;
 	
 	public BaseClass (int x) {
 		// construction
