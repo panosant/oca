@@ -4,8 +4,8 @@ public class Loop {
 	
 	public static void executeTraditionalForLoop() {
 		int[] in = {1,2,3};
-		
-		for (int x = 0; ++x < 4; x++) {
+		int tmp = 0;
+		for (int x = 0; ++x < 4; tmp = in[x++]) {
 			System.out.println(in[x]);
 		}
 	}
