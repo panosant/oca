@@ -1,5 +1,7 @@
 package com.antonakospanos.oca.exam;
 
+//import java.lang.*; java.lang package in imported BY DEFAULT!!! No need to re-declare it!
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.function.Function;
