@@ -13,6 +13,7 @@ import com.antonakospanos.oca.exam.java8certificationquestions.DerivedClass;
 import com.antonakospanos.oca.exam.java8certificationquestions.InstaceOfEvaluation;
 import com.antonakospanos.oca.exam.java8certificationquestions.Switch;
 import com.antonakospanos.oca.exam.java8certificationquestions.TimeManipulation;
+import com.antonakospanos.oca.exam.myexamcloud.GarbageCollection;
 import com.antonakospanos.oca.exam.oracle.Exceptions;
 import com.antonakospanos.oca.exam.oracle.Love;
 import com.antonakospanos.oca.exam.oracle.Programmer;
@@ -61,6 +62,9 @@ public class Revision {
 		
 		TimeManipulation.diffInstants();
 		TimeManipulation.diffDateTimes();
+		
+		// myexamcloud
+		GarbageCollection.testGC();
 	}
 	
 	/**
