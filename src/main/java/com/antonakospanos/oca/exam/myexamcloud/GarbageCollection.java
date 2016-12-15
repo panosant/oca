@@ -12,4 +12,11 @@ public class GarbageCollection {
 	}
 	// The stack variables (pointers to the Integer objects) one and two are out of scope here, so they are discarded!
 	// The Integer objects are out of scope (hence, no reference pointing to them) and are eligible for GC!
+	
+	
+	@Override
+	public void finalize() throws Throwable {
+		// Called by the garbage collector when garbage collection determines that there are no more references to a GarbageCollection object!
+		super.finalize();
+	} 
 }
