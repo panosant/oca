@@ -25,8 +25,14 @@ public class TimeManipulation {
 		LocalTime lt = LocalTime.now();
 		
 		Period p = Period.ofDays(1);
-		ldt.plus(p);
+		Duration d = Duration.ofDays(1);
+		Duration t = Duration.ofHours(1);
+		ldt.plus(d);
+		ldt.plus(d);
+
 		ld.plus(p);
-		lt.plus(p);
+		ld.plus(p);
+
+		lt.plus(t);
 	}
 }

@@ -2,7 +2,7 @@ package com.antonakospanos.oca.exam.java8certificationquestions;
 
 public class Loop {
 	
-	public static void executeTraditionForLoop() {
+	public static void executeTraditionalForLoop() {
 		int[] in = {1,2,3};
 		
 		for (int x = 0; ++x < 4; x++) {
@@ -10,7 +10,7 @@ public class Loop {
 		}
 	}
 	
-	public static void executeTraditionForLoop(String in[]) {
+	public static void executeTraditionalForLoop(String in[]) {
 		// int[] in = {1,2,3}; Compilation ERROR: in already assigned from the argList!
 		
 		for (int x = 0; ++x < 4; x++) {

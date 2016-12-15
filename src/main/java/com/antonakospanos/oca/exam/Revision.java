@@ -4,9 +4,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.function.Function;
 
+import com.antonakospanos.oca.exam.gocertify.Array1D;
+import com.antonakospanos.oca.exam.gocertify.Array2D;
 import com.antonakospanos.oca.exam.gocertify.InstanceOf;
 import com.antonakospanos.oca.exam.gocertify.Octal;
-import com.antonakospanos.oca.exam.gocertify.TwoDimensionalArray;
 import com.antonakospanos.oca.exam.java8certificationquestions.Arithmetic;
 import com.antonakospanos.oca.exam.java8certificationquestions.DerivedClass;
 import com.antonakospanos.oca.exam.java8certificationquestions.InstaceOfEvaluation;
@@ -31,7 +32,8 @@ public class Revision {
 		// gortefy.com
 		InstanceOf.evaluate();
 		Octal.evaluate();
-		new TwoDimensionalArray();
+		new Array1D();
+		new Array2D();
 		// Variable identifiers (names) can explicitly start with a letter, a dollar mark or an underscore!
 		
 		//whizlabs
