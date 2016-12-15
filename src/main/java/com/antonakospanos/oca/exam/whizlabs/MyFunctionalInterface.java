@@ -21,8 +21,9 @@ public interface MyFunctionalInterface {
 //	abstract void finalize(); Cannot be defined in a @FunctionalInterface cause their access modifier is less than public!
 
 	/**
-	 * This is the explicit abstract method of the interface that shall be implemented by the implementation class 
-	 * in case of using Lambda Expressions, hence handling this interface as a {@link FunctionalInterface}!  
+	 * This is the single abstract method (SAM) of the interface -called "functional method"- 
+	 * that shall be implemented by the implementation class in case of using 
+	 * Lambda Expressions, hence adapting this interface as a {@link FunctionalInterface}!  
 	 * 
 	 * @param s
 	 */
