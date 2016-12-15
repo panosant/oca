@@ -16,7 +16,7 @@ import com.antonakospanos.oca.exam.oracle.Exceptions;
 import com.antonakospanos.oca.exam.oracle.Love;
 import com.antonakospanos.oca.exam.oracle.Programmer;
 import com.antonakospanos.oca.exam.whizlabs.FunctionalInterfaceHelper;
-import com.antonakospanos.oca.exam.whizlabs.LamdaWithoutArgs;
+import com.antonakospanos.oca.exam.whizlabs.LambdaWithoutArgs;
 import com.antonakospanos.oca.exam.whizlabs.ListHelper;
 import com.antonakospanos.oca.exam.whizlabs.LocalScope;
 
@@ -36,7 +36,7 @@ public class Revision {
 		
 		//whizlabs
 		LocalScope.evaluate("I am an arg to this static method");
-		LamdaWithoutArgs.evaluate();
+		LambdaWithoutArgs.evaluate();
 		Function<String, Integer> integerFunction = FunctionalInterfaceHelper.getIntegerFunction();
 		
 		testDefaultAccessModifier(); // without typing "default"!

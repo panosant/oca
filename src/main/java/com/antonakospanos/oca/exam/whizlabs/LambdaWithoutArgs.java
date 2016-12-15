@@ -2,7 +2,7 @@ package com.antonakospanos.oca.exam.whizlabs;
 
 import java.util.function.Predicate;
 
-public class LamdaWithoutArgs {
+public class LambdaWithoutArgs {
 	
 	public static void evaluate() {
 		
