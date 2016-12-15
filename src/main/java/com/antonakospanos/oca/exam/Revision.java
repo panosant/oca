@@ -67,6 +67,8 @@ public class Revision {
 		
 		// myexamcloud
 		GarbageCollection.testGC();
+		float prim = Float.parseFloat("1.2");
+		Float obj = Float.valueOf("1.2");
 	}
 	
 	/**
