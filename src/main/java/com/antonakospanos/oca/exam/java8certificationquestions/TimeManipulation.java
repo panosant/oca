@@ -20,19 +20,35 @@ public class TimeManipulation {
 	}
 	
 	public static void diffDateTimes() {
-		LocalDateTime ldt = LocalDateTime.now();
-		LocalDate ld = LocalDate.now();
-		LocalTime lt = LocalTime.now();
-		
 		Period p = Period.ofDays(1);
 		Duration d = Duration.ofDays(1);
 		Duration t = Duration.ofHours(1);
-		ldt.plus(d);
-		ldt.plus(d);
+		
+		// LocalDateTime
+		LocalDateTime ldt = LocalDateTime.now();
+		System.out.println(ldt);
+		
+		LocalDateTime ldtNew = ldt.plus(p);
+		LocalDateTime ldtNew2 = ldt.plus(d);
+		System.out.println(ldt); // LocalDateTime is immutable!!!!
+		System.out.println(ldtNew);
+		System.out.println(ldtNew2);
+		
+		// LocalDate
+		LocalDate ld = LocalDate.now();
+		System.out.println(ld);
+		
+		LocalDate ldNew = ld.plus(p);
+		System.out.println(ld); // LocalDate is immutable!!!!
+		System.out.println(ldNew);
+		
+		// LocalTime
+		LocalTime lt = LocalTime.now();
+		System.out.println(lt);
 
-		ld.plus(p);
-		ld.plus(p);
+		LocalTime ltNew = lt.plus(t);
+		System.out.println(lt); // LocalTime is immutable!!!!
+		System.out.println(ltNew);
 
-		lt.plus(t);
 	}
 }
