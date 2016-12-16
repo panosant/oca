@@ -10,7 +10,7 @@ public class GarbageCollection {
 		one = two; // new Integer(1) is eligible for GC to collect! No reference pointing to the object new Integer(1) anymore!
 		one = null; // new Integer(2) is still referred by variable two: new Integer(2) is still not eligible for GC!
 		
-		System.gc();
+		System.gc(); // GC and hence finalize() method might or might not be called, it's NOT guaranteed!!!
 		Runtime.getRuntime().gc();
 	}
 	// The stack variables (pointers to the Integer objects) one and two are out of scope here, so they are discarded!
