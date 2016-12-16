@@ -8,15 +8,23 @@ public class DerivedClass extends BaseClass {
 	public DerivedClass(int x) {
 		super(x);
 		
-		protectedInteger = 0; // Visible directly!
-		super.protectedInteger = 0; // Visible by inheritance!
+		privateInteger = 1; 				// Visible cause we are in DerivedClass!!!
+		protectedInteger = 1; 			// Visible directly!
 		
-		BaseClass bc = new BaseClass(0);
-		// bc.protectedInteger = 1; // NOT Visible cause we are NOT in BaseClass!!!
+		// super.privateInteger = 1;// NOT Visible cause we are NOT in BaseClass!!!
+		if (super.protectedInteger == 0) { // Visible by inheritance!
+			testAccessModifiers();
+		}
+	}
+	
+	public void testAccessModifiers() {
+		
+		BaseClass bc = new BaseClass(1);
+		// bc.protectedInteger = 2; // NOT Visible cause we are NOT in BaseClass!!!
 		bc.protectedInteger = 2; // Visible cause DerivedClass and BaseClass are in the same package!
 		
-		DerivedClass dc = new DerivedClass(0);
-		dc.privateInteger = 1;	 // Visible cause we are in BaseClass!!!
+		DerivedClass dc = new DerivedClass(1);
+		dc.privateInteger = 2;	 // Visible cause we are in DerivedClass!!!
 		dc.protectedInteger = 2; // Visible cause cause we are in com.antonakospanos.oca.exam.java8certificationquestions package!
 	}
 

@@ -6,7 +6,7 @@ public class BaseClass {
 	protected int protectedInteger;
 	
 	public BaseClass (int x) {
-		// construction
+		this.protectedInteger = x;
 	}
 	
 	protected void method() {
